@@ -13,6 +13,16 @@
   --dairy: #fcfcfc;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
 h1,
 h2,
 h3,
@@ -26,21 +36,6 @@ ul {
   list-style: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin: 0;
-  color: var(--slate);
-  background-color: var(--white);
-}
-
-.text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 ul,
 ol {
   margin: 0;
@@ -51,13 +46,11 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-/* Typography */
 .title {
   font-size: 56px;
   letter-spacing: 0.02em;
@@ -140,7 +133,6 @@ a {
 
 .hero {
   background-color: var(--navy-blue);
-  padding: 120px 0;
 }
 
 .title-button {
@@ -154,10 +146,6 @@ a {
   background-color: var(--ocean);
 }
 
-.section {
-  padding: 120px 0;
-}
-
 .section-two {
   background-color: var(--cloud);
 }
@@ -166,61 +154,8 @@ a {
   background-color: #ffffff;
 }
 
-/* Header and Navigation */
-.header {
-  padding: 20px 0;
-}
-
-.header-border {
-  border-bottom: 1px solid var(--grey);
-}
-
-.nav-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  gap: 20px;
-}
-
-/* Team Section */
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.team-card {
-  text-align: center;
-}
-
-/* Portfolio Section */
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.portfolio-card {
-  text-align: center;
-  position: relative;
-}
-
-.portfolio-card .card-border {
-  border-bottom: 1px solid var(--slate);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-
 .footer {
   background-color: var(--navy-blue);
-  padding: 40px 0;
 }
 
 .footer .logo-studio {
@@ -229,4 +164,128 @@ a {
 
 .footer .text {
   color: var(--cloud);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.nav-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-web {
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu .list-item {
+  margin-right: 40px;
+}
+
+.menu .list-item:last-child {
+  margin-right: 0;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-list .list-item {
+  margin-right: 40px;
+}
+
+.contacts-list .list-item:last-child {
+  margin-right: 0;
+}
+
+.link,
+.address-link {
+  padding: 24px 0;
+}
+
+.section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.title {
+  max-width: 496px;
+  margin-bottom: 72px;
+}
+
+.button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.list .list-item {
+  margin-right: 24px;
+}
+
+.list .list-item:last-child {
+  margin-right: 0;
+}
+
+.list .list-item:first-child {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
+.container .title {
+  margin-bottom: 8px;
+}
+
+.list {
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.footer .link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
