@@ -251,7 +251,7 @@ img {
   padding: 100px 0;
 }
 
-.footer .logo {
+.footer .logo-web {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -286,4 +286,7 @@ img {
 
 .section {
   padding: 120px 0;
+}
+.section-one {
+  padding: 188px 0 188px;
 }
