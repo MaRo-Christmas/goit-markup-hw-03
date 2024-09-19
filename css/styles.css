@@ -284,9 +284,16 @@ img {
   margin: 0 auto;
 }
 
-.section .section-two {
+.section {
   padding: 120px 0;
 }
+
 .section-one {
-  padding: 188px 0 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.section-two {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
